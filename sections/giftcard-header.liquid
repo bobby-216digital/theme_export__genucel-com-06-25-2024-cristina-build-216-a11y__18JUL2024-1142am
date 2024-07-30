@@ -16,6 +16,7 @@
   <h1 class="site-header__logo{% unless has_logo %} text-center{% endunless %}" itemscope itemtype="http://schema.org/Organization">
     {%- if section.settings.logo -%}
       <a
+        aria-label="Genucel Logo. Link to Homepage"
         href="{{ routes.root_url }}"
         itemprop="url"
         class="site-header__logo-link">

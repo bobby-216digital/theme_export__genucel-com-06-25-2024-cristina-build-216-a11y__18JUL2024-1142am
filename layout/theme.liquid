@@ -158,5 +158,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </image-element>
     </div>
   </template>
+  <script>
+    setTimeout(()=>{
+    let a11yEasy = document.querySelector(".easytabs-tabs");
+    let a11yContent = document.querySelector(".easytabs-contents");
+    let a11yHolder = document.querySelector(".easytabs-content-holder");
+    let a11yEasyTwo = document.querySelectorAll(".easytabs-holder ul li");
+      
+
+      
+      if(a11yContent){
+        a11yContent.removeAttribute("role");
+      }
+
+      
+      if(a11yHolder){
+      a11yHolder.removeAttribute("role");
+      a11yHolder.removeAttribute("aria-expanded");
+      }
+
+    }, 1000)
+
+  </script>
 </body>
 </html>
