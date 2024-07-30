@@ -221,7 +221,7 @@
               </div>
 
               {%- if link_slide -%}
-                <a href="{{ block.settings.link }}" class="hero__slide-link" aria-hidden="true"></a>
+                <a aria-label="{{ block.settings.image.alt }}" href="{{ block.settings.link }}" class="hero__slide-link"></a>
               {%- endif -%}
 
               {%- if hero_text -%}
